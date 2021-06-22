@@ -1,3 +1,7 @@
+Enhancements:
+
+* Use a binary mode for file manipulations
+
 # 1.4.1 (2021-05-30)
 
 Fixes:

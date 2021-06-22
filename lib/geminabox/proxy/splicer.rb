@@ -15,6 +15,7 @@ module Geminabox
       def create
         if data = new_content
           f = Tempfile.create('geminabox')
+          f.binmode
           begin
             f.write(data)
           ensure
