@@ -4,6 +4,7 @@ module Geminabox
 
   class Hostess < Sinatra::Base
     def serve
+      headers["Cache-Control"] = 'no-transform'
       send_file(File.expand_path(File.join(Geminabox.data, *request.path_info)), :type => response['Content-Type'])
     end
 
